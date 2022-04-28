@@ -15,6 +15,7 @@ namespace ConsoleGettingPcInfo {
 			Console.WriteLine(JsonConvert.SerializeObject(new Specs()));
 			Console.WriteLine(JsonConvert.SerializeObject(new Temps()));
 			Console.WriteLine(JsonConvert.SerializeObject(new ActiveProcesses()));
+			Console.WriteLine(JsonConvert.SerializeObject(new Network()));
 			Console.ReadKey();
 		}
 	}

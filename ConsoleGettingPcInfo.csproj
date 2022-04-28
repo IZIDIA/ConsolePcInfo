@@ -56,6 +56,8 @@
     <Compile Include="PcInfo\Disks.cs" />
     <Compile Include="PcInfo\InstalledPrograms.cs" />
     <Compile Include="PcInfo\Network.cs" />
+    <Compile Include="PcInfo\Network\AdapterInfo.cs" />
+    <Compile Include="PcInfo\Network\AdapterObject.cs" />
     <Compile Include="PcInfo\OperatingSystemInfo.cs" />
     <Compile Include="PcInfo\Perfomance.cs" />
     <Compile Include="PcInfo\Specs.cs" />
