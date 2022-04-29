@@ -52,14 +52,20 @@
   <ItemGroup>
     <Compile Include="PcInfo\ActiveProcesses.cs" />
     <Compile Include="PcInfo\AutoloadPrograms.cs" />
-    <Compile Include="PcInfo\Devices.cs" />
+    <Compile Include="PcInfo\Devices\DiskObject.cs" />
+    <Compile Include="PcInfo\Devices\MotherboardObject.cs" />
+    <Compile Include="PcInfo\Peripherals.cs" />
+    <Compile Include="PcInfo\Devices\CPUObject.cs" />
+    <Compile Include="PcInfo\Devices\GPUObject.cs" />
+    <Compile Include="PcInfo\Devices\PrinterObject.cs" />
+    <Compile Include="PcInfo\Devices\RAMObject.cs" />
     <Compile Include="PcInfo\Disks.cs" />
     <Compile Include="PcInfo\InstalledPrograms.cs" />
     <Compile Include="PcInfo\Network.cs" />
     <Compile Include="PcInfo\Network\AdapterInfo.cs" />
     <Compile Include="PcInfo\Network\AdapterObject.cs" />
     <Compile Include="PcInfo\OperatingSystemInfo.cs" />
-    <Compile Include="PcInfo\Perfomance.cs" />
+    <Compile Include="PcInfo\Performance.cs" />
     <Compile Include="PcInfo\Specs.cs" />
     <Compile Include="PcInfo\Temps.cs" />
     <Compile Include="Program.cs" />

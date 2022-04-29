@@ -1,4 +1,5 @@
 ﻿using ConsoleGettingPcInfo.PcInfo;
+using Microsoft.Win32;
 using Newtonsoft.Json;
 using OpenHardwareMonitor.Hardware;
 using System;
@@ -16,6 +17,11 @@ namespace ConsoleGettingPcInfo {
 			Console.WriteLine(JsonConvert.SerializeObject(new Temps()));
 			Console.WriteLine(JsonConvert.SerializeObject(new ActiveProcesses()));
 			Console.WriteLine(JsonConvert.SerializeObject(new Network()));
+			Console.WriteLine(JsonConvert.SerializeObject(new Peripherals()));
+			Console.WriteLine(JsonConvert.SerializeObject(new Disks()));
+			Console.WriteLine(JsonConvert.SerializeObject(new InstalledPrograms()));
+			Console.WriteLine(JsonConvert.SerializeObject(new AutoloadPrograms()));
+			Console.WriteLine(JsonConvert.SerializeObject(new Performance()));
 			Console.ReadKey();
 		}
 	}
