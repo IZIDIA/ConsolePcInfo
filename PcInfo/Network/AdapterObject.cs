@@ -71,14 +71,14 @@ namespace NetInfo {
 				OnPropertyChanged(() => Speed);
 			}
 		}
-		private bool internet;
-		public bool Internet {
-			get { return internet; }
-			set {
-				internet = value;
-				OnPropertyChanged(() => Internet);
-			}
-		}
+		//private bool internet;
+		//public bool Internet {
+		//	get { return internet; }
+		//	set {
+		//		internet = value;
+		//		OnPropertyChanged(() => Internet);
+		//	}
+		//}
 		#endregion
 		#region IP
 		private string ipAddress;

@@ -15,14 +15,14 @@ namespace ConsoleGettingPcInfo.PcInfo {
 		public string SystemName { get; set; }
 		public string UserName { get; set; }
 		public string Architecture { get; set; }
-		public string UEFI { get; set; }
+		public bool UEFI { get; set; }
 		public OperatingSystemInfo() {
 			GetOSInfo();
 			try {
-				UEFI = IsWindowsUEFI().ToString();
+				UEFI = IsWindowsUEFI();
 			}
 			catch {
-				UEFI = "Unknown";
+				UEFI = false;
 			}
 		}
 		public void GetOSInfo() {

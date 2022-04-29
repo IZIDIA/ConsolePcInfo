@@ -19,8 +19,8 @@ namespace ConsoleGettingPcInfo.PcInfo {
 				Printers.Add(new PrinterObject(
 					string.Format("{0}", printer.GetPropertyValue("Name")),
 					string.Format("{0}", printer.GetPropertyValue("Status")),
-					string.Format("{0}", printer.GetPropertyValue("Default")),
-					string.Format("{0}", printer.GetPropertyValue("Network"))
+					(bool)printer.GetPropertyValue("Default"),
+					(bool)printer.GetPropertyValue("Network")
 				));
 			}
 		}
