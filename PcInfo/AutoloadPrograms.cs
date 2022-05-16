@@ -19,6 +19,7 @@ namespace ConsoleGettingPcInfo.PcInfo {
 			foreach (ManagementObject mObject in searcher.Get()) {
 					AutoloadProgramsList.Add(mObject["Name"].ToString());
 			}
+			AutoloadProgramsList.Sort();
 		}
 	}
 }

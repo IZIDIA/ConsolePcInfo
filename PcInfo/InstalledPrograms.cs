@@ -16,6 +16,7 @@ namespace ConsoleGettingPcInfo.PcInfo {
 			var result = new List<string>();
 			result.AddRange(GetInstalledProgramsFromRegistry(RegistryView.Registry32));
 			result.AddRange(GetInstalledProgramsFromRegistry(RegistryView.Registry64));
+			result.Sort();
 			return result;
 		}
 		private static IEnumerable<string> GetInstalledProgramsFromRegistry(RegistryView registryView) {
